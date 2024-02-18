@@ -13,7 +13,7 @@ import com.multiplex.models.Booking;
 import com.multiplex.repos.BookingRepository;
 
 @Service
-public class BookingService {
+public class BookingService implements BookingServiceInterface {
 
 	@Autowired private BookingRepository repo;
 	@Autowired private ShowsService sservice;
