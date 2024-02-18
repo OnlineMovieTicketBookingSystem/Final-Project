@@ -16,14 +16,14 @@ import org.springframework.web.bind.annotation.RestController;
 import com.multiplex.dtos.BookingDTO;
 import com.multiplex.dtos.ShowCheckDTO;
 import com.multiplex.models.Hall;
-import com.multiplex.services.BookingService;
+import com.multiplex.services.BookingServiceInterface;
 
 @CrossOrigin
 @RestController
 @RequestMapping("/api/bookings")
 public class BookingController {
 
-	@Autowired private BookingService service;
+	@Autowired private BookingServiceInterface service;
 	
 	@PostMapping
     public ResponseEntity<?> saveHall(@RequestBody BookingDTO dto){
