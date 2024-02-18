@@ -13,7 +13,7 @@ import com.multiplex.repos.MovieRepository;
 import com.multiplex.utils.StorageService;
 
 @Service
-public class MovieService {
+public class MovieService implements MovieServiceInterface{
 
 	@Autowired private MovieRepository repo;
 	@Autowired private StorageService storage;
